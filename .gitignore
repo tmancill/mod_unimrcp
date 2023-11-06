@@ -18,3 +18,4 @@ missing
 mod_unimrcp.la
 mod_unimrcp_la-mod_unimrcp.lo
 mod_unimrcp_la-mod_unimrcp.o
+cscope.out
