@@ -1,5 +1,7 @@
 # MRCP Module For FreeSWITCH
 
+Note that the instructions in this readme no longer function as of FreeSWITCH 1.10.10 and Debian Bookworm.  See [README-docker-build.md](README-docker-build.md) for an alternative build.
+
 ## How to build
 
 1. Build FreeSWITCH and its dependencies
