@@ -2581,7 +2581,9 @@ static switch_status_t recog_channel_start_input_timers(speech_channel_t *schann
 		}
 		/* set it and forget it */
 		mrcp_application_message_send(schannel->unimrcp_session, schannel->unimrcp_channel, mrcp_message);
-	}
+	} else {
+		switch_log_printf(SWITCH_CHANNEL_UUID_LOG(schannel->session_uuid), SWITCH_LOG_ERROR, "(%s) Refusing to start input timers, channel_state(%d), start_of_input(%d), timers_started(%d)\n", schannel->state, schannel->name, r->start_of_input, r->timers_started);
+    }
 
   done:
 
